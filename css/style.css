@@ -314,6 +314,13 @@ h6 {
   visibility: hidden;
 }
 
+.visually-hidden {
+  position: fixed;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
 .logo {
   white-space: nowrap;
   color: rgb(49, 53, 59);
@@ -1152,6 +1159,19 @@ body._lock {
           flex: 0 1 33.333%;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+}
+
+.item-reviews {
+  position: relative;
+}
+
+.item-reviews__link {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .item-reviews__wrap {
